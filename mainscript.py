@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import mysql.connector
 
-client = MongoClient('mongodb+srv://Priyansh:Priyansh@cluster0-0wsdg.mongodb.net/test?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://*********@cluster0-0wsdg.mongodb.net/test?retryWrites=true&w=majority')
 db = client.Records
 collection = db.apiFailedRequest
 
@@ -29,8 +29,8 @@ print (df_agg)
 mydb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="priyansh",
-    database="Internship"
+    password="**********",
+    database="xvc"
     )
 
 mycursor = mydb.cursor()
